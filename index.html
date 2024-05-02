@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>MATH ASSIGNMNET</h1>
+
+
+    <script>
+        var num = +prompt("Enter the positive Integer with point value")
+        console.log("Positive Number = " + num);
+        var round = Math.round(num)
+        console.log("RoundOff Value = " + round);
+        var floor = Math.floor(num)
+        console.log("Floor Value = " + floor);
+        var ceil = Math.ceil(num)
+        console.log("Ceil Value = " + ceil);
+
+
+
+
+        var num2 = +prompt("Enter the Negative floating point value")
+        console.log("Negative Number = " + num2);
+        var round = Math.round(num2)
+        console.log("RoundOff Value = " + round);
+        var floor = Math.floor(num2)
+        console.log("Floor Value = " + floor);
+        var ceil = Math.ceil(num2)
+        console.log("Ceil Value = " + ceil);
+
+
+
+        var num3 = +prompt("Enter the value which I can absolute for you ")
+        if(num3 === num3) {
+            console.log(num3 * -1);
+        } else{
+            console.log(num3);
+        }
+
+
+        // RANDOM DICE
+
+       var num = Math.round((Math.random()*7))
+        console.log("Random Dice Number is " + num);
+        
+        // HEADS/TAILS
+
+        var num = Math.round((Math.random()*3))
+        if(num  == 2 ) {
+            console.log("HEADS");
+        }
+        else{
+            console.log("TAILS");
+        }
+
+        // Random number between 1 to 100 
+
+        var randomNum = Math.round((Math.random()*100))
+        console.log("Random Number between 1 to 100  is " + randomNum);
+
+        // GUESS the NUMBER
+
+        var userNumber = +prompt('Enter Your Number between 1 to 10 ')
+        var guessNum = Math.round((Math.random()*10))
+        console.log(guessNum);
+        if(guessNum == userNumber ){
+           alert('Congratulation You Win');
+        }
+        else if(guessNum > userNumber ){
+           alert('TRY AGAIN your number is less than our number');
+           
+        }
+        else{
+            alert('TRY AGAIN your number is greater than our number');
+        }
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
